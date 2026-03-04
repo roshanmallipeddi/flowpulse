@@ -1,0 +1,4 @@
+pyyaml
+pydantic
+pytest
+pytest-cov
