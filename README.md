@@ -1,17 +1,17 @@
 # FlowPulse
 
-**FlowPulse** is a real-time and batch data engineering platform designed to demonstrate modern data engineering practices including data ingestion, transformation, orchestration, analytics, and AI integration.
+**FlowPulse** is a portfolio-grade data engineering platform that demonstrates modern data architecture including batch pipelines, streaming pipelines, analytics, orchestration, and AI integrations.
 
-## Project Goal
+## Goal
 
-The goal of this project is to build an end-to-end data engineering platform that simulates production-grade data systems.
+The goal of this project is to build a complete end-to-end data platform while learning real-world data engineering tools and practices.
 
-## Tech Stack
+## Planned Stack
 
 - Python
 - Apache Spark
-- Kafka
-- Airflow
+- Apache Kafka
+- Apache Airflow
 - dbt
 - PostgreSQL
 - Docker
@@ -22,8 +22,20 @@ The goal of this project is to build an end-to-end data engineering platform tha
 
 ## Architecture
 
-Architecture diagram will be added later.
+Architecture documentation will be added in `architecture.md`.
 
-## Setup Instructions
+## Project Structure
 
-Setup instructions will be added soon.
+This repository follows a modular data platform structure including:
+
+- ingestion
+- pipelines
+- orchestration
+- analytics
+- observability
+- machine learning
+- AI agents
+
+## Status
+
+🚀 Day 1 — Repository initialization complete
