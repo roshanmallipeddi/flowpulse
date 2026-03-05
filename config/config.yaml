@@ -1,11 +1,18 @@
 project:
-  name: flowpulse
-  environment: dev
+  name: FlowPulse
+  version: 1.0
 
 database:
   host: localhost
   port: 5432
-  name: flowpulse
+  name: flowpulse_db
+  user: postgres
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  output: data/output
 
 logging:
   level: INFO
+  file_path: logs/app.log
