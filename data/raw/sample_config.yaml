@@ -1,0 +1,7 @@
+database:
+  host: localhost
+  port: 5432
+
+pipeline:
+  batch_size: 100
+  retries: 3
