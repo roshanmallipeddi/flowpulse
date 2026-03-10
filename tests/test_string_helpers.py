@@ -1,3 +1,5 @@
+import pytest
+
 from src.utils.string_helpers import (
     clean_whitespace,
     normalize_case,
@@ -63,3 +65,36 @@ def test_slugify_numbers():
 def test_slugify_special_chars():
     assert slugify("Hello@World!!!") == "helloworld"
     
+def test_clean_whitespace_invalid_input():
+    with pytest.raises(ValueError, match="Input must be a string"):
+        clean_whitespace(None)
+
+
+def test_normalize_case_invalid_input():
+    with pytest.raises(ValueError, match="Input must be a string"):
+        normalize_case(123)
+
+
+def test_normalize_sentence_case():
+    result = normalize_case("hELLo worLD", mode="sentence")
+    assert result == "Hello world"
+
+
+def test_normalize_case_invalid_mode():
+    with pytest.raises(ValueError, match="Invalid mode"):
+        normalize_case("hello world", mode="camel")
+
+
+def test_extract_emails_invalid_input():
+    with pytest.raises(ValueError, match="Input must be a string"):
+        extract_emails(["test@example.com"])
+
+
+def test_validate_phone_unsupported_country():
+    with pytest.raises(ValueError, match="Unsupported country"):
+        validate_phone("9876543210", country="UK")
+
+
+def test_slugify_invalid_input():
+    with pytest.raises(ValueError, match="Input must be a string"):
+        slugify(None)
