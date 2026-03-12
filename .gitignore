@@ -1,11 +1,44 @@
+# Virtual environments
 venv/
+.env
+
+# Python cache
 __pycache__/
 *.pyc
-.env
-.idea/
+*.pyo
+*.pyd
+
+# IDE settings
 .vscode/
-logs/
+.idea/
+
+# OS files
 .DS_Store
 Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Data files (generated)
+data/raw/*
+!data/raw/.gitkeep
+
+# Temporary test files
 data/raw/test*
 data/raw/missing*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
